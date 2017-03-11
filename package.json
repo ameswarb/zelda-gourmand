@@ -1,0 +1,29 @@
+{
+  "name": "zelda-gourmand",
+  "version": "1.0.0",
+  "description": "React app that shows you what you can make based on your inventory in Zelda: Breath of the Wild",
+  "main": "index.js",
+  "scripts": {
+    "data": "node data/make.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameswarb/zelda-gourmand.git"
+  },
+  "author": "Alex Meswarb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameswarb/zelda-gourmand/issues"
+  },
+  "homepage": "https://github.com/ameswarb/zelda-gourmand#readme",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "dependencies": {
+    "sqlite3": "^3.1.8"
+  }
+}
