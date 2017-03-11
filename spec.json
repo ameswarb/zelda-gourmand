@@ -1,0 +1,67 @@
+[
+  "items",
+  {
+    "classes": [],
+    "_classes_enum": [
+      "gemstone",
+      "monsterFang",
+      "monsterGuts",
+      "monsterHorn",
+      "monsterPart",
+      "smallAnimal"
+    ],
+    "description": "",
+    "duration": 0,
+    "id": "",
+    "image": "",
+    "name": "",
+    "notes": ""
+  },
+  "recipes",
+  {
+    "buff": {
+      "name": "",
+      "duration": 0,
+      "value": 0
+    },
+    "_buffs_enum": [
+      "chilly",
+      "energizing",
+      "enduring",
+      "electro",
+      "fireproof",
+      "hasty",
+      "hearty",
+      "mighty",
+      "sneaky",
+      "spicy",
+      "tough"
+    ],
+    "description": "",
+    "duration": 0,
+    "health": 0.0,
+    "_health_comment": "-1 for fully healed",
+    "id": "",
+    "image": "",
+    "ingredients": [
+      {
+        "class": "any of class"
+      },
+      {
+        "id": "specific ingredient"
+      },
+      {
+        "or": ["<id>", "<id>", "<id>"]
+      }
+    ],
+    "name": "",
+    "notes": "",
+    "stamina": 0.0,
+    "_stamina_comment": "-1 for full stamina",
+    "type": "",
+    "_types_enum": [
+      "food",
+      "elixir"
+    ] 
+  }
+]
