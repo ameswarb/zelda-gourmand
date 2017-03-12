@@ -3,11 +3,13 @@
   {
     "classes": [],
     "_classes_enum": [
+      "fish",
       "gemstone",
       "monsterFang",
       "monsterGuts",
       "monsterHorn",
       "monsterPart",
+      "mushroom",
       "smallAnimal"
     ],
     "description": "",
@@ -62,6 +64,6 @@
     "_types_enum": [
       "food",
       "elixir"
-    ] 
+    ]
   }
 ]
