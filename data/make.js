@@ -2,7 +2,6 @@ process.chdir(__dirname);
 const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 
-const db = new sqlite3.Database('./data.db');
 const items = [];
 const recipes = [];
 
@@ -32,7 +31,7 @@ function parseItem(err, row) {
 }
 
 function dumpItems() {
-  fs.writeFileSync('./items.json', JSON.stringify(items, null, 2), 'utf-8');
+  fs.writeFileSync('../client/public/items.json', JSON.stringify(items, null, 2), 'utf-8');
 }
 
 function parseRecipe(err, row) {
@@ -59,9 +58,10 @@ function parseRecipe(err, row) {
 }
 
 function dumpRecipes() {
-  fs.writeFileSync('./recipes.json', JSON.stringify(recipes, null, 2), 'utf-8');
+  fs.writeFileSync('../client/public/recipes.json', JSON.stringify(recipes, null, 2), 'utf-8');
 }
 
+const db = new sqlite3.Database('./data.db');
 db.each('SELECT * FROM items', parseItem, dumpItems);
 db.each('SELECT * FROM recipes', parseRecipe, dumpRecipes);
 db.close();
